@@ -13,8 +13,8 @@ export class ElementList extends React.Component{
         var elements=this.props.elements;
         var obj=JSON.parse(elements);
         const ElementList= obj.map((element) => (
-                    <Element city={element.city} url={element.url}/>
+                    <Element localization={element.localization} url={element.url}/>
                 ));
-        return ElementList;
+        return <div className="ElementList">{ElementList}</div>;
     }
 }

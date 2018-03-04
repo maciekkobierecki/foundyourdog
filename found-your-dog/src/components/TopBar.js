@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import style from "./style.css";
+import {Color} from './Color';
+
+const style=({
+    
+});
 
 export class TopBar extends React.Component {
     render(){
-        return <div className="TopBar">IfoundYourDog</div>;
+        return <div style={style}>IfoundYourDog</div>;
     }
 } 

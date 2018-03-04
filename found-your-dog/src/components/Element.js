@@ -1,7 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import style from './style.css';
+import {LocalizationInfo} from './LocalizationInfoElement';
+import {Image} from './Image';
+import {Color} from './Color';
 
+const Colors=Color;
+
+const style=(
+    {
+    height: 500,
+    background: Colors.lightgray,
+    margin:20,
+});
 
 
 export class Element extends React.Component {
@@ -11,13 +20,10 @@ export class Element extends React.Component {
     }
 
     render(){
-        var url= this.props.url;
         return (
-        <div className="Element">
-            <h1>JESTEM SUPER ELEMENTEM</h1>
-            {this.props.city}
-            <img src={url}/>
-            
+        <div style={style}>
+            <LocalizationInfo localization={this.props.localization}/>
+            <Image url={this.props.url} />
         </div>
         );
     }

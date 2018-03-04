@@ -1,13 +1,13 @@
 
-.Element{
-    padding: 10;
-    background-color: lightgrey;
-}
-
 .TopBar{
-    margin-left: 25%;
-    margin-right: 25%;
     background-color: azure;
     padding:30px;
     font-size: 20px;
+}
+
+.ElementList{
+    margin-left:350px;
+    margin-right:350px;
+    border-left: 1px dotted lightgray;
+    border-right: 1px dotted lightgray;
 }
