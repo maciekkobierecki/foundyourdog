@@ -1,7 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import style from './style.css';
 import {Element} from './Element';
+import {Color} from './Color';
+
+
+const style=(
+    {
+        width: 660,
+        marginRight:'auto',
+        marginLeft:'auto',
+        background: Color.grey
+});
 
 
 export class ElementList extends React.Component{
@@ -15,6 +23,6 @@ export class ElementList extends React.Component{
         const ElementList= obj.map((element) => (
                     <Element localization={element.localization} url={element.url}/>
                 ));
-        return <div className="ElementList">{ElementList}</div>;
+        return <div style={style}>{ElementList}</div>;
     }
 }
