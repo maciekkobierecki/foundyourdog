@@ -13,5 +13,5 @@ export class MenuButton extends React.Component {
 } 
 
 MenuButton.PropTypes={
-    label: PropTypes.string
+    label: PropTypes.string.isRequired
 };
