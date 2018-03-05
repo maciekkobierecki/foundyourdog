@@ -3,6 +3,7 @@ import ElementButton from './ElementButton';
 
 const style=({
     display:'flex',
+    marginTop: 5,
 });
 
 export class ElementMenu extends React.Component {

@@ -1,18 +1,25 @@
 import React from 'react';
 import {Color} from './Color';
 const style=({
-    padding:5,
-    marginLeft:120,
+    width: '50%',
+    paddingTop:5,
+    paddingBottom: 5,
+    marginLeft:10,
+    marginRight: 10,
     fontSize:20,
     opacity: 0.8,   
 });
 
 const hoverStyle=({
-    padding:5,
-    marginLeft:120,
+    width:'50%',
+    paddingTop:5,
+    paddingBottom:5,
+    marginLeft:10,
+    marginRight: 10,
     fontSize:20,
     background: Color.onHoverButtonColor,
     borderRadius:3,
+    cursor: 'pointer',
 });
 
 export default class ElementButton extends React.Component {

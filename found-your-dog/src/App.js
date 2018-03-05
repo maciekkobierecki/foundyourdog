@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import {ElementList} from './components/ElementList';
 import {TopBar} from './components/TopBar';
+import { Menu } from './components/Menu';
+import { Icon, ICONS, SIZE } from './components/Icons';
 
 class App extends Component {
   render() {
@@ -10,6 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <TopBar />
+        <Icon icon={ICONS.CAMERA}  defaultSize={SIZE.CAMERA}/>
+        <Menu />
         <ElementList elements={elements}/>
       </div>
     );
