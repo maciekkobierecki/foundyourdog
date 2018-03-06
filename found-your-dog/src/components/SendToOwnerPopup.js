@@ -7,16 +7,23 @@ import { ICONS } from './Icons';
 import { ElementDescripition } from './ElementDescription';
 import { ElementMenu } from './ElementMenu';
 import {MenuButton} from './MenuButton';
+import { SendToOwnerForm } from './SendToOwnerForm';
 
 
 const style = (
     {
-        minHeight: 600,
-        background: Color.lightestGrey,
-        borderRadius: 4,
-        marginBottom: 20,
-        marginLeft:20,
-        marginRight:20,
+        display:'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'fixed',
+        width:'100%',
+        height:'100%',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        margin: 'auto',
+        backgroundColor: 'rgba(0,0,0,0.5)',
     });
 
 
@@ -29,8 +36,7 @@ export class SendToOwnerPopup extends React.Component {
     render() {
         return (
             <div style={style}>
-                Tu jest fajny popapik
-                <MenuButton label="wyślij" onClick={this.props.sendAndClose}/>
+                <SendToOwnerForm />
             </div>
         );
     }

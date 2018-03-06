@@ -21,7 +21,7 @@ class App extends Component {
     });
   }
   render() {
-    var elements="[{\"localization\": \"warsaw\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/living-new-york-city-dog-600x450.jpg\"},{\"localization\": \"warsaw\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/living-new-york-city-dog-600x450.jpg\"},{\"localization\": \"warsaw\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/living-new-york-city-dog-600x450.jpg\"},{\"localization\": \"sochocin\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/living-new-york-city-dog-600x450.jpg\"}]";
+    var elements="[{\"localization\": \"warsaw\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/puppy-hicksville-dog-training-dog-snow-600x450.jpg\"},{\"localization\": \"warsaw\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/puppy-hicksville-dog-training-dog-snow-600x450.jpg\"},{\"localization\": \"warsaw\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/living-new-york-city-dog-600x450.jpg\"},{\"localization\": \"sochocin\",\"url\": \"https://www.caninecommander.com/wp-content/uploads/living-new-york-city-dog-600x450.jpg\"}]";
     
     var popup= this.state.showSendToOwnerPopup ? <SendToOwnerPopup /> : null;
     return (

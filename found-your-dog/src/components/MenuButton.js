@@ -2,7 +2,8 @@ import React from 'react';
 import {Color} from './Color';
 import PropTypes from 'prop-types';
 const style=({
-    fontSize:30,
+    padding:10,
+    fontSize:22,
     
 });
 
