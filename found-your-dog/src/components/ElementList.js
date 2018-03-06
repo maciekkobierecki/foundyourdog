@@ -8,6 +8,7 @@ const style=(
         width: 660,
         marginRight:'auto',
         marginLeft:'auto',
+        paddingTop:10,
         background: Color.grey
 });
 
@@ -21,7 +22,7 @@ export class ElementList extends React.Component{
         var elements=this.props.elements;
         var obj=JSON.parse(elements);
         const ElementList= obj.map((element) => (
-                    <Element localization={element.localization} url={element.url}/>
+                    <Element localization={element.localization} url={element.url} onSendToOwner={this.props.onSendToOwner}/>
                 ));
         return <div style={style}>{ElementList}</div>;
     }

@@ -40,12 +40,12 @@ export default class ElementButton extends React.Component {
 
     render(){
         if(this.state.hovered){
-            return <div style={hoverStyle} onMouseEnter={this.handleOnMouseEnter} onMouseLeave={this.handleOnMouseLeave}>
+            return <div style={hoverStyle} onMouseEnter={this.handleOnMouseEnter} onMouseLeave={this.handleOnMouseLeave} onClick={this.props.onClick}>
                 {this.props.label}
             </div>
         }
         else{
-            return <div style={style} onMouseEnter={this.handleOnMouseEnter} onMouseLeave={this.handleOnMouseLeave}>
+            return <div style={style} onMouseEnter={this.handleOnMouseEnter} onMouseLeave={this.handleOnMouseLeave} onClick={this.props.onClick}>
                 {this.props.label}
             </div>
         }

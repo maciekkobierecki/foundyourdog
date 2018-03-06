@@ -6,6 +6,7 @@ import { Icon } from './Icons';
 import { ICONS } from './Icons';
 import { ElementDescripition } from './ElementDescription';
 import { ElementMenu } from './ElementMenu';
+import {MenuButton} from './MenuButton';
 
 
 const style = (
@@ -19,7 +20,7 @@ const style = (
     });
 
 
-export class Element extends React.Component {
+export class SendToOwnerPopup extends React.Component {
     constructor(props) {
         super(props);
 
@@ -28,10 +29,8 @@ export class Element extends React.Component {
     render() {
         return (
             <div style={style}>
-                <LocalizationInfo localization={this.props.localization} />
-                <Image url={this.props.url} />
-                <ElementDescripition />
-                <ElementMenu onSendToOwner={this.props.onSendToOwner}/>
+                Tu jest fajny popapik
+                <MenuButton label="wyślij" onClick={this.props.sendAndClose}/>
             </div>
         );
     }

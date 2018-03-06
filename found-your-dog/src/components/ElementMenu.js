@@ -13,7 +13,7 @@ export class ElementMenu extends React.Component {
 
     render(){
         return <div style={style}>
-            <ElementButton label='Znam własciciela'/>
+            <ElementButton label='Znam własciciela' onClick={this.props.onSendToOwner}/>
             <ElementButton label='Pokaz lokalizacje'/>
         </div>
     }
