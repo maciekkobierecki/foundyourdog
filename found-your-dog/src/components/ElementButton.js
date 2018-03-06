@@ -7,7 +7,6 @@ const style=({
     marginLeft:10,
     marginRight: 10,
     fontSize:20,
-    opacity: 0.8,   
 });
 
 const hoverStyle=({

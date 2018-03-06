@@ -11,11 +11,11 @@ import { ElementMenu } from './ElementMenu';
 const style = (
     {
         minHeight: 600,
-        background: Color.lightestGrey,
         borderRadius: 4,
         marginBottom: 20,
         marginLeft:20,
         marginRight:20,
+        background: Color.white,
     });
 
 
